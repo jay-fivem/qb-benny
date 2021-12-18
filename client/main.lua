@@ -24,10 +24,10 @@ RegisterNetEvent("qb-benny:client:repair", function()
 end)
 
 local benny = PolyZone:Create({
-    vector2(-50.17, -1067.12), -- vector3(-50.17, -1067.12, 29.29)
-    vector2(-37.61, -1031.66), --vector3(-37.61, -1031.66, 28.67)
-    vector2(-8.56, -1038.22), --vector3(-8.56, -1038.22, 30.86)
-    vector2(-21.38, -1077.61), --vector3(-21.38, -1077.61, 27.33)
+    vector2(-50.17, -1067.12),
+    vector2(-37.61, -1031.66),
+    vector2(-8.56, -1038.22),
+    vector2(-21.38, -1077.61),
   }, {
     name="benny",
     minZ = 25.0,
