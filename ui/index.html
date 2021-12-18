@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<script type="text/javascript">		
+			window.addEventListener("message", function(event) {
+				var item = event.data;
+				var newAudio = document.createElement('audio');
+                newAudio.id = item.sound;
+                newAudio.src = 'sounds/' + item.sound + '.ogg';
+                document.body.appendChild(newAudio);
+				if (item.sound && item.volume) {
+					document.getElementById(item.sound);
+					document.getElementById(item.sound).load();
+					document.getElementById(item.sound).volume = item.volume;
+					document.getElementById(item.sound).play();
+				}
+			});					
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
