@@ -49,6 +49,6 @@ benny:onPlayerInOut(function(isPointInside)
         end
     else
         inBenny = false
-        exports['qb-radialmenu']:AddOption(5)
+        exports['qb-radialmenu']:RemoveOption(5)
     end
 end)
